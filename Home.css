@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'PP Acma';
+    src: url(./src/Fonts/PPAcma-Light.otf);
+}
+@font-face {
+    font-family: 'Pragmatica';
+    src: url(./src/Fonts/fonnts.com-Pragmatica_Light.otf);
+}
+:root{
+    --background-clr: #F1EBDD;
+    --text-clr: #574C3E;
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'PP Acma';
+    color: #fff;
+}
+.main-container{
+    background-image: url(./src/assets/HomeBanner.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.main-container .rhombus{
+    width: 18px;
+    height: 18px;
+   margin: 30px;
+   border: 1px solid #F1EBDD;
+   position: fixed;
+}
+.text-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-top: 200px;
+}
+
+.left-side{
+    position: relative;
+    left: 9%;  
+    padding-bottom: 25px;
+}
+.symbols{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.symbols p{
+    font-family: 'Pragmatica';
+    font-size: 7px;
+    font-weight: 300;
+    margin-right: 15px;
+}
+.symbols div{
+    display: flex;
+    gap: 8px;
+}
+.text{
+    font-family: 'Pragmatica';
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3%;
+}
+.text span{
+    font-weight: 400;
+}
+.right-side{
+    position: relative;
+    padding-top: 30px;
+    padding-right:95px ;
+}
+
+.right-side h1{
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 55px;
+    line-height: 80px;
+}
+
+
+
+
+
+
+.second-container{
+    background-color: var(--background-clr);
+    padding: 20px;
+    color: var(--text-clr);
+}
+.box-container{
+    border: 1px solid var(--text-clr);
+    text-align: center;
+}
+
+
