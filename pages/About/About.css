@@ -1,0 +1,471 @@
+@font-face {
+    font-family: 'PP Acma';
+    src: url(../../src/Fonts/PPAcma-Light.otf);
+}
+@font-face {
+    font-family: 'Pragmatica';
+    src: url(../../src/Fonts/fonnts.com-Pragmatica_Light.otf);
+}
+@font-face {
+    font-family: 'Pragmatica-bold';
+    src: url(../../src/Fonts/fonnts.com-Pragmatica_Bold.otf);
+}
+@font-face {
+    font-family: 'neue montreal';
+    src: url(../../src/Fonts/ppneuemontreal-book.otf);
+}
+:root{
+    --background-clr: #F1EBDD;
+    --background-clr2:#E5DACD;
+    --background-clr3: #DBCFBF;
+    --background-clr4: #CBBFAE;
+    --dark-background:#252323;
+    --text-clr: #574C3E;
+    --background-red:#CC0E1E;
+
+}
+::-webkit-scrollbar{
+    display: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 200vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--background-clr);
+    font-family: 'PP Acma';
+}
+.background-clip{
+    position: absolute;
+    width: 100%;
+    height: 200vh;
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+
+} 
+.rhombus{
+    width: 18px;
+    height: 18px;
+   margin: 30px;
+   border: 1px solid #F1EBDD;
+   position: fixed;
+    
+}
+.first-container{
+    padding: 50px 80px;
+    margin-bottom: 160px;
+}
+.box-container{
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--background-clr);
+   
+}
+.left-box{
+    width: 30px;
+    height: 39.4px;
+    border-right: 1px solid var(--background-clr);
+    border-bottom: 1px solid var(--background-clr);
+}
+.text-field{
+    text-align: center;
+}
+.logo{
+    width: 170px;
+    height: 47px;
+    margin-top: 14px;
+    margin-bottom: 145px;
+}
+.text-field a{
+    text-decoration: none;
+    color: var(--background-clr);
+    font-family: 'Pragmatica';
+    font-size: 12px;
+    font-weight: 400;
+}
+.text-field a li{
+    margin-bottom: 32px;
+}
+.text-field p{
+    font-size: 45px;
+    font-weight: 400;
+    padding: 0 205px;
+}
+.right-box{
+    width: 30px;
+    height: 39.4px;
+    border-left: 1px solid var(--background-clr);
+    border-bottom: 1px solid var(--background-clr);
+}
+
+
+.second-container{
+    font-family: 'PP Acma';
+    
+}
+.second-container p{
+    font-size: 33px;
+    font-weight: 400;
+    text-align: left;
+    padding: 0 355px;
+}
+
+
+
+
+
+
+
+
+
+
+.services{
+    background-color: var(--background-clr);
+    color: var(--text-clr);
+    padding: 80px 50px;
+    font-family: 'PP Acma';
+}
+.services a{
+    text-decoration: none;
+}
+.services a li{
+    font-family: 'Pragmatica';
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom:20px;
+    color: var(--text-clr);
+}
+.head-p{
+    font-size:33px;
+    font-weight:500;
+    width: 62%;
+}
+.accordion{
+    margin: 50px 0;
+    padding-left: 6px;    
+
+}
+.accordion li{
+    border-bottom: 1px solid var(--text-clr);
+    padding: 15px 0;
+    margin-top: 25px;
+    list-style: decimal-leading-zero;
+}
+.first-accordion{
+    border-top: 1px solid var(--text-clr);
+}
+.first-accordion label{
+    margin-top: 25px;
+}
+
+
+.accordion li label{
+    font-family: 'PP Acma';
+    font-size: 45px;
+    font-weight: 400;
+    margin-left: 30px;
+    cursor: pointer;
+    position:relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+        
+}
+label:after{
+    content: '+';
+    font-size: 45px;
+    font-weight: 400;
+    position: absolute;
+    right: 50px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    font-size: 21px;
+    font-weight: 400;
+    font-family: 'neue montreal';
+    width: 60%;
+    text-align: left;
+    padding: 0 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: padding 0.5s , max-height 0.5s ;
+}
+.accordion  input[type="radio"]:checked + label + .content{
+    max-height: 110px;
+}
+.accordion input[type="radio"]:checked + label:after{
+    transform: rotate(135deg);
+}
+
+
+.clients{
+    text-align: center;
+}
+.clients li{
+    font-family: 'Pragmatica';
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 50px;
+    margin-bottom: 25px;
+}
+.clients h2{
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.sectors{
+    background: #fff;
+    color: var(--text-clr);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+}
+.sectors-head p{
+    font-size: 40px;
+    font-weight: 500;
+    max-width: 50%;
+}
+.sectors-head li{
+    font-size: 12px;
+    font-family: 'Pragmatica';
+    margin-bottom:20px;
+    font-weight: 600;
+
+}
+.sectors li::marker{
+    color: #CC0E1E;
+}
+
+.scrolling-cards{
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 35px;
+    max-height: 382px;
+    width: auto;
+}
+.card{
+    display:flex;
+    height: 372px;
+    min-width: 80%;
+    margin-right: 100px;
+}
+.card .left img{
+    width: 580px;
+    height: 355px;
+    border-radius: 5px;
+}
+.card .right{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.card .right h2{
+    font-size: 35px;
+    margin-bottom: 13px;
+    font-weight: 500;
+}
+.card .right svg{
+    margin-bottom: 13px;
+}
+.card .right p{
+    font-family: 'neue montreal';
+    font-size: 18px;
+    max-width: 91%;
+}
+.card .right button{
+    font-family: 'Pragmatica';
+    font-size: 14px;
+    color: #CC0E1E;
+    border: 0;
+    outline: 0;
+    background: none;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+.team{
+    background: #fff;
+    color: var(--text-clr);
+    padding: 80px 70px;
+}
+.team-head{
+    margin-bottom: 90px;
+}
+.team-head p{
+    font-size: 40px;
+    font-weight: 500;
+}
+.team-head li{
+    font-size: 12px;
+    font-family: 'Pragmatica';
+    margin-bottom:20px;
+    font-weight: 600;
+
+}
+.team li::marker{
+    color: #CC0E1E;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 28px;
+    padding-top: 28px
+   
+}
+
+.row h3{
+    font-size: 25px;
+    font-weight: 400;
+}
+.row p{
+    font-size:18px;
+    font-family: 'neue montreal';
+}
+.links{
+    display: flex;
+    gap: 50px;
+    padding-left: 170px;
+}
+.links a{
+    text-decoration: none;
+    color: var(--text-clr);
+}
+
+
+
+
+
+
+
+.footer{
+    background-color: var(--dark-background);
+    padding: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.left-side{
+    border: 1px solid #fff;
+    border-radius: 5px 0 0 5px;
+    width: 62%;
+    padding-top: 225px;
+    padding-left: 60px;
+}
+.left-side img{
+    width:170px;
+    margin-bottom: 90px;
+}
+.left-side li{
+    font-family: 'Pragmatica';
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.left-side h1{
+    font-size: 90px;
+    font-weight: 600;
+    font-family: 'PP Acma';
+    margin-bottom: 62px;
+}
+.footer-tag{
+    display: flex;
+    gap: 200px;
+}
+.footer-tag div a{
+    text-decoration: none;
+    font-family: 'neue montreal';
+    font-size: 12px;
+    font-weight: 200;
+    color: #fff;
+}
+.line-1{
+    display: flex;
+    gap: 32px;
+}
+.right-side{
+    display:flex ;
+    flex-direction: column;
+    font-family: 'Pragmatica';
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-radius: 0 5px 5px 0;
+    width: 38%;
+}
+.first-banner{
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #fff;
+}
+.first-banner p{
+    font-size: 14px;
+}
+.second-banner{
+    padding: 42px 62px;
+    border-bottom: 1px solid #fff;
+}
+.second-banner li{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.second-banner img{
+    width: 396px;
+    margin-bottom: 10px;
+}
+.second-banner p{
+    font-family: 'neue montreal';
+    font-size: 16px;
+    font-weight: 200;
+    text-transform: none;
+}
+.second-banner p i{
+    margin-left: 126px;
+}
+.third-banner{
+    display: flex;
+    gap: 70px;
+    margin-left: 62px;
+    margin-top: 25px;
+    font-family: 'neue montreal';
+    font-size: 14px;
+}
+.col-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.col-1 a{
+    text-decoration: none;
+    color: #fff;    
+}
+.col-2{
+    font-size: 12px;
+}
