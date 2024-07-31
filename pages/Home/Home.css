@@ -1,173 +1,655 @@
 @font-face {
-    font-family: 'PP Acma';
-    src: url(../../src/Fonts/PPAcma-Light.otf);
+  font-family: "PP Acma";
+  src: url(/src/Fonts/PPAcma-Light.otf);
 }
 @font-face {
-    font-family: 'Pragmatica';
-    src: url(../../src/Fonts/fonnts.com-Pragmatica_Light.otf);
+  font-family: "Pragmatica";
+  src: url(/src/Fonts/fonnts.com-Pragmatica_Light.otf);
 }
-:root{
-    --background-clr: #F1EBDD;
-    --background-clr2:#E5DACD;
-    --background-clr3: #DBCFBF;
-    --background-clr4: #CBBFAE;
-    --dark-background:#252323;
-    --text-clr: #574C3E;
-    --background-red:#CC0E1E;
+@font-face {
+    font-family: "neue montreal";
+    src: url(/src/Fonts/ppneuemontreal-book.otf);
+  }
+:root {
+  --background-clr: #f1ebdd;
+  --background-clr2: #e5dacd;
+  --background-clr3: #dbcfbf;
+  --background-clr4: #cbbfae;
+  --dark-background: #252323;
+  --text-clr: #574c3e;
+  --background-red: #cc0e1e;
+  --cards: 3;
+  --cardheight: 92vh;
+  --cardmargin: 3vw;
+  --cardpadding: 15px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "PP Acma";
+  color: #fff;
+}
+.main-container {
+  background-image: url(../../src/assets/HomeBanner.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.main-container .rhombus {
+  width: 18px;
+  height: 18px;
+  margin: 30px;
+  border: 1px solid #f1ebdd;
+  position: fixed;
+}
+.text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-top: 200px;
+}
+
+.left-side {
+  position: relative;
+  left: 9%;
+  padding-bottom: 25px;
+}
+.symbols {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.symbols p {
+  font-family: "Pragmatica";
+  font-size: 7px;
+  font-weight: 300;
+  margin-right: 15px;
+}
+.symbols div {
+  display: flex;
+  gap: 8px;
+}
+.text {
+  font-family: "Pragmatica";
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3%;
+}
+.text span {
+  font-weight: 400;
+}
+.right-side {
+  position: relative;
+  padding-top: 30px;
+  padding-right: 95px;
+}
+
+.right-side h1 {
+  font-size: 70px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 55px;
+  line-height: 80px;
+}
+
+.second-container {
+  background-color: var(--background-clr);
+  padding: 35px 25px;
+  color: var(--text-clr);
+}
+.box-container {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid var(--text-clr);
+  text-align: center;
+}
+
+.box-left {
+  width: 28px;
+  height: 39px;
+  border-right: 1px solid var(--text-clr);
+  border-bottom: 1px solid var(--text-clr);
+}
+.box-left-end {
+  width: 28px;
+  height: 39px;
+  border-right: 1px solid var(--text-clr);
+}
+.box-right {
+  width: 28px;
+  height: 39px;
+  border-left: 1px solid var(--text-clr);
+  border-bottom: 1px solid var(--text-clr);
+}
+.box-right-end {
+  width: 28px;
+  height: 39px;
+  border-left: 1px solid var(--text-clr);
+}
+.text-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px;
+  width: 995px;
+}
+.text-field li {
+  font-family: "Pragmatica-bold";
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.text-field h2 {
+  font-size: 45px;
+  font-weight: 400;
+}
+.text-field button {
+  font-family: "Pragmatica";
+  padding: 20px 30px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+.text-field i {
+  margin-left: 2px;
+}
 
 
-}
-::-webkit-scrollbar{
-    display: none;
-}
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    font-family: 'PP Acma';
-    color: #fff;
-}
-.main-container{
-    background-image: url(../../src/assets/HomeBanner.jpg);
-    width: 100vw;
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-}
-.main-container .rhombus{
-    width: 18px;
-    height: 18px;
-   margin: 30px;
-   border: 1px solid #F1EBDD;
-   position: fixed;
-}
-.text-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    padding-top: 200px;
-}
 
-.left-side{
-    position: relative;
-    left: 9%;  
-    padding-bottom: 25px;
+
+
+
+.third-container {
+  background-color: var(--background-clr);
+  padding: 0 25px;
+  color: var(--text-clr);
+
 }
-.symbols{
+.box1 {
+  background-color: var(--background-clr2);
+  padding: 45px 35px;
+  position: sticky;
+  top: 35px;
+  
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.head p{
+    font-size: 40px;
+
+}
+.head-right{
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
-    
+    gap: 20px;
+
 }
-.symbols p{
+.head-right p{
     font-family: 'Pragmatica';
-    font-size: 7px;
-    font-weight: 300;
-    margin-right: 15px;
-}
-.symbols div{
-    display: flex;
-    gap: 8px;
-}
-.text{
-    font-family: 'Pragmatica';
-    font-weight: 700;
     font-size: 10px;
+    color: #fff;
+    font-weight: 300;
+    background-color: var(--background-red);
+    padding: 8px 25px;
     text-transform: uppercase;
-    letter-spacing: 3%;
 }
-.text span{
-    font-weight: 400;
-}
-.right-side{
-    position: relative;
-    padding-top: 30px;
-    padding-right:95px ;
-}
-
-.right-side h1{
-    font-size: 70px;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding-top: 55px;
-    line-height: 80px;
-}
-
-
-
-
-
-
-.second-container{
-    background-color: var(--background-clr);
-    padding: 35px 25px;
-    color: var(--text-clr);
-}
-.box-container{
+.content{
     display: flex;
-    justify-content: space-between;
+    margin-top: 37px;
+}
+.dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background:#252323;
+    display: inline-flex;
+
+}
+.left{
+    text-align: left;
+    width: 24%;
+}
+.left-1{
+    font-family: 'Pragmatica';
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+.left-2{
+    font-family: 'neue montreal';
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.line3{
+    display: flex;
+    font-family: 'neue montreal';
+    margin-bottom: 30px;
+}
+.sector{
+    font-size: 14px;
+    margin-right: 70px;
+}
+.sector-list{
+    font-size: 18px;
+}
+.line4{
+    display: flex;
+    margin-bottom: 150px;
+}
+.line4 p{
+    font-family: 'neue montreal';
+    font-size: 14px;
+    background-color: rgba(114, 114, 114, 0.21);
+    padding: 5px 9px;
+    margin-right: 4px;
+}
+.left button{
+    font-family: 'Pragmatica';
+    font-size: 12px;
+    padding: 16px 20px;
     border: 1px solid var(--text-clr);
-    text-align: center;
-
+    border-radius: 38px;
+    outline: 0;
+    background: none;
+}
+.right{
+    width: 75%;
+    background-image: url(/src/assets/restlessstill.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.right img{
+    margin-left:15px ;
 }
 
-.box-left{
-    width: 28px;
-    height: 39px;
-    border-right: 1px solid var(--text-clr);
-    border-bottom: 1px solid var(--text-clr);
+
+
+
+
+
+
+
+
+.box2{
+    background-color: var(--background-clr3);
+    padding: 45px 35px;
+    position: sticky;
+    top: 35px;
+    
+  }
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .head p{
+      font-size: 40px;
+  
+  }
+  .head-right{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  
+  }
+  .head-right p{
+      font-family: 'Pragmatica';
+      font-size: 10px;
+      color: #fff;
+      font-weight: 300;
+      background-color: var(--background-red);
+      padding: 8px 25px;
+      text-transform: uppercase;
+  }
+  .content{
+      display: flex;
+      margin-top: 37px;
+  }
+  .dot{
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background:#252323;
+      display: inline-flex;
+  
+  }
+  .left{
+      text-align: left;
+      width: 24%;
+  }
+  .left-1{
+      font-family: 'Pragmatica';
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 15px;
+  }
+  .left-2{
+      font-family: 'neue montreal';
+      font-size: 18px;
+      margin-bottom: 20px;
+  }
+  .line3{
+      display: flex;
+      font-family: 'neue montreal';
+      margin-bottom: 30px;
+  }
+  .sector{
+      font-size: 14px;
+      margin-right: 70px;
+  }
+  .sector-list{
+      font-size: 18px;
+  }
+  .line4{
+      display: flex;
+      margin-bottom: 150px;
+  }
+  .line4 p{
+      font-family: 'neue montreal';
+      font-size: 14px;
+      background-color: rgba(114, 114, 114, 0.21);
+      padding: 5px 9px;
+      margin-right: 4px;
+  }
+  .left button{
+      font-family: 'Pragmatica';
+      font-size: 12px;
+      padding: 16px 20px;
+      border: 1px solid var(--text-clr);
+      border-radius: 38px;
+      outline: 0;
+      background: none;
+  }
+  .right2{
+      width: 75%;
+      background-image: url(/src/assets/restlessstill2.png);
+      background-position: center;
+      background-size: cover;
+      border-radius: 10px;
+      margin-left: 10px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .box3{
+    background-color: var(--background-clr4);
+    padding: 45px 35px;
+    position: sticky;
+    top: 35px;
+    
+  }
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .head p{
+      font-size: 40px;
+  
+  }
+  .head-right{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  
+  }
+  .head-right p{
+      font-family: 'Pragmatica';
+      font-size: 10px;
+      color: #fff;
+      font-weight: 300;
+      background-color: var(--background-red);
+      padding: 8px 25px;
+      text-transform: uppercase;
+  }
+  .content{
+      display: flex;
+      margin-top: 37px;
+  }
+  .dot{
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background:#252323;
+      display: inline-flex;
+  
+  }
+  .left{
+      text-align: left;
+      width: 24%;
+  }
+  .left-1{
+      font-family: 'Pragmatica';
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-bottom: 15px;
+  }
+  .left-2{
+      font-family: 'neue montreal';
+      font-size: 18px;
+      margin-bottom: 20px;
+  }
+  .line3{
+      display: flex;
+      font-family: 'neue montreal';
+      margin-bottom: 30px;
+  }
+  .sector{
+      font-size: 14px;
+      margin-right: 70px;
+  }
+  .sector-list{
+      font-size: 18px;
+  }
+  .line4{
+      display: flex;
+      margin-bottom: 150px;
+  }
+  .line4 p{
+      font-family: 'neue montreal';
+      font-size: 14px;
+      background-color: rgba(114, 114, 114, 0.21);
+      padding: 5px 9px;
+      margin-right: 4px;
+  }
+  .left button{
+      font-family: 'Pragmatica';
+      font-size: 12px;
+      padding: 16px 20px;
+      border: 1px solid var(--text-clr);
+      border-radius: 38px;
+      outline: 0;
+      background: none;
+  }
+  .right3{
+      width: 75%;
+      background-image: url(/src/assets/restlessstill3.jpeg);
+      background-position: center;
+      background-size: cover;
+      border-radius: 10px;
+      margin-left: 10px;
+  }
+  
+
+
+
+#boxes{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(var(--cards),var(--cardheight));
+    gap: var(--cardmargin);
+    padding-bottom: calc(var(--cards) * var(--cardpadding));
 }
-.box-left-end{
-    width: 28px;
-    height: 39px;
-    border-right: 1px solid var(--text-clr);
+#card1{
+    --index:1;
 }
-.box-right{
-    width: 28px;
-    height: 39px;
-    border-left: 1px solid var(--text-clr);
-    border-bottom: 1px solid var(--text-clr);
+#card2{
+    --index:2;
 }
-.box-right-end{
-    width: 28px;
-    height: 39px;
-    border-left: 1px solid var(--text-clr);
+#card3{
+    --index:3;
 }
-.text-field{
+
+
+
+
+
+
+
+.fourth-container{
+    background-color: #fff;
+    color: var(--text-clr);
+    padding: 60px;
+}
+.approach{
+    
+    display: flex;
+    border: 1.5px solid rgba(37, 35, 35, 0.2);
+    border-radius: 10px;
+    padding: 73px;
+}
+
+.approach li{
+    font-family: 'Pragmatica';
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+}
+.approach li::marker{
+    color: var(--background-red);
+}
+.approach-text{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 50px;
-    width: 995px;
+    flex: 2;
 }
-.text-field li{
-    font-family: 'Pragmatica-bold';
-    font-size:10px;
-    font-weight:400;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.approach-text p{
+    font-size: 33px;
 }
-.text-field h2{
-    font-size: 45px;
-    font-weight: 400;
+.service{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 105px;
+    gap: 7px;
 }
-.text-field button{
-    font-family: 'Pragmatica';
-    padding: 20px 30px;
-    border-radius: 50px;
+.service p{
+    font-family: 'neue montreal';
+    font-size: 18px;
+}
+
+
+
+
+
+
+.sectors{
+    background: #fff;
+    color: var(--text-clr);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 50px;
+}
+.sectors-head p{
+    font-size: 40px;
+    font-weight: 500;
+    max-width: 50%;
+}
+.sectors-head li{
     font-size: 12px;
-    font-weight: 700;
-    text-align: center;
+    font-family: 'Pragmatica';
+    margin-bottom:20px;
+    font-weight: 600;
+
+}
+.sectors li::marker{
+    color: #CC0E1E;
+}
+
+.scrolling-cards{
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 35px;
+    max-height: 382px;
+    width: auto;
+}
+.card{
+    display:flex;
+    height: 372px;
+    min-width: 80%;
+    margin-right: 100px;
+}
+.card .left img{
+    width: 580px;
+    height: 355px;
+    border-radius: 5px;
+}
+.card .right-sector{
+    margin-left: 370px;
+    margin-top: 50px;
+}
+.card .right-sector h2{
+    font-size: 35px;
+    margin-bottom: 13px;
+    font-weight: 500;
+}
+.card .right-sector svg{
+    margin-bottom: 13px;
+}
+.card .right-sector p{
+    font-family: 'neue montreal';
+    font-size: 18px;
+    max-width: 91%;
+}
+.card .right-sector button{
+    font-family: 'Pragmatica';
+    font-size: 14px;
+    color: #CC0E1E;
     border: 0;
     outline: 0;
+    background: none;
+    margin-top: 30px;
+    font-weight: 600;
     cursor: pointer;
 }
-.text-field i{
-    margin-left: 2px;
-}
 
 
 
@@ -176,349 +658,107 @@ body{
 
 
 
-.third-container{
-    background-color: var(--background-clr);
-    padding: 0 25px;
-    color:var(--text-clr) ;
-}
-.first-box{
-    background-color: var(--background-clr2);
-    padding: 25px 45px;
-    color:var(--text-clr) ;
-    margin-bottom: 35px;
-    z-index: 1;
-    height: 70vh;
-
-}
-.head{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.head p{
-    font-size: 30px;
-    font-weight: 600;
-}
-.head-right{
-    display: flex;
-    align-items:center ;
-    gap: 20px;
-}
-.head-right p{
-    background-color: var(--background-red);
+.footer{
+    background-color: var(--dark-background);
+    padding: 35px;
     color: #fff;
-    padding: 5px;
-    align-items: center;
-    font-family: 'Pragmatica';
-    font-size: 10px;
-    font-weight: 300;
     text-transform: uppercase;
+    display: flex;
+    height: 100vh;
 }
-.content{
-    padding-top:30px;
-    display:flex;
-    align-items: flex-start;
-    justify-content: space-between;
+.left-side-footer{
+    border: 1px solid #fff;
+    border-radius: 5px 0 0 5px;
+    width: 60%;
+    padding-top: 225px;
+    padding-left: 60px;
 }
-.left{
- width: 28%;
- text-align: left;
- margin-top: 30px;
+.left-side-footer img{
+    width:170px;
+    margin-bottom: 90px;
 }
-.left li{
+.left-side-footer li{
     font-family: 'Pragmatica';
     font-size: 12px;
+    margin-bottom: 15px;
+}
+.left-side-footer h1{
+    font-size: 90px;
     font-weight: 600;
+    font-family: 'PP Acma';
+    margin-bottom: 62px;
+}
+.footer-tag{
+    display: flex;
+    gap: 200px;
+}
+.footer-tag div a{
+    text-decoration: none;
+    font-family: 'neue montreal';
+    font-size: 12px;
+    font-weight: 200;
+    color: #fff;
+}
+.line-1{
+    display: flex;
+    gap: 32px;
+}
+.right-side-footer{
+    display:flex ;
+    flex-direction: column;
+    font-family: 'Pragmatica';
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-radius: 0 5px 5px 0;
+    width: 38%;
+}
+.first-banner{
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #fff;
+}
+.first-banner p{
+    font-size: 14px;
+}
+.second-banner{
+    padding: 42px 62px;
+    border-bottom: 1px solid #fff;
+}
+.second-banner li{
+    font-size: 12px;
     margin-bottom: 10px;
 }
-.left p{
-    font-family: 'neue montreal';
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 15px;
-
-}
-.line3{
-    display: flex;
-    gap: 55px;
-    font-family: 'neue montreal';
-    margin-bottom: 15px;
-}
-
-.line3 .sector{
-    font-size: 14px;
-}
-.line3 .sector-list{
-    font-size: 18px;
-}
-.line4{
-    display: flex;
-    gap: 3px;
-}
-.line4 p{
-    font-size: 14px;
-    font-weight: 400;
-    background-color:rgba(114, 114, 114, 0.21);
-    padding: 4px 8px;
-}
-.left button{
-    font-size: 12px;
-    font-family: 'Pragmatica';
-    font-weight: 400;
-    padding: 16px 20px;
-    border-radius: 38px;
-    background: transparent;
-    outline: 0;
-    border: 1px solid var(--text-clr);
-    margin-top: 75px;
-}
-
-.right{
-    width: 70%;
-    height: 401px;
-    background-image:url(/src/assets/restlessstill.png);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-
-}
-
-.top-image{
-    position: relative;
-    z-index: 1;
-    width: 86px;
-    height: 86px;
-    left: 20px;    
-}
-
-
-
-
-
-
-.second-box{
-    background-color: var(--background-clr3);
-    padding: 25px 45px;
-    color:var(--text-clr) ;
-    margin-bottom: 35px;
-    z-index: 2;
-    height: 70vh;
-}
-.head{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.head p{
-    font-size: 30px;
-    font-weight: 600;
-}
-.head-right{
-    display: flex;
-    align-items:center ;
-    gap: 20px;
-}
-.head-right p{
-    background-color: var(--background-red);
-    color: #fff;
-    padding: 5px;
-    align-items: center;
-    font-family: 'Pragmatica';
-    font-size: 10px;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-.content{
-    padding-top:30px;
-    display:flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-.left{
- width: 28%;
- text-align: left;
- margin-top: 30px;
-}
-.left li{
-    font-family: 'Pragmatica';
-    font-size: 12px;
-    font-weight: 600;
+.second-banner img{
+    width: 396px;
     margin-bottom: 10px;
 }
-.left p{
+.second-banner p{
     font-family: 'neue montreal';
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 15px;
-
+    font-size: 16px;
+    font-weight: 200;
+    text-transform: none;
 }
-.line3{
+.second-banner p i{
+    margin-left: 126px;
+}
+.third-banner{
     display: flex;
-    gap: 55px;
+    gap: 70px;
+    margin-left: 62px;
+    margin-top: 25px;
     font-family: 'neue montreal';
-    margin-bottom: 15px;
-}
-
-.line3 .sector{
     font-size: 14px;
 }
-.line3 .sector-list{
-    font-size: 18px;
-}
-.line4{
+.col-1{
     display: flex;
-    gap: 3px;
+    flex-direction: column;
+    gap: 10px;
 }
-.line4 p{
-    font-size: 14px;
-    font-weight: 400;
-    background-color:rgba(114, 114, 114, 0.21);
-    padding: 4px 8px;
+.col-1 a{
+    text-decoration: none;
+    color: #fff;    
 }
-.left button{
+.col-2{
     font-size: 12px;
-    font-family: 'Pragmatica';
-    font-weight: 400;
-    padding: 16px 20px;
-    border-radius: 38px;
-    background: transparent;
-    outline: 0;
-    border: 1px solid var(--text-clr);
-    margin-top: 75px;
 }
-
-.right{
-    width: 70%;
-    height: 401px;
-    background-image:url(/src/assets/restlessstill.png);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-
-}
-
-.top-image{
-    position: relative;
-    z-index: 1;
-    width: 86px;
-    height: 86px;
-    left: 20px;    
-}
-
-
-
-
-
-
-
-
-.third-box{
-    background-color: var(--background-clr4);
-    padding: 25px 45px;
-    color:var(--text-clr) ;
-    margin-bottom: 35px;
-    z-index: 3;
-    height: 70vh;
-       
-}
-.head{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.head p{
-    font-size: 30px;
-    font-weight: 600;
-}
-.head-right{
-    display: flex;
-    align-items:center ;
-    gap: 20px;
-}
-.head-right p{
-    background-color: var(--background-red);
-    color: #fff;
-    padding: 5px;
-    align-items: center;
-    font-family: 'Pragmatica';
-    font-size: 10px;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-.content{
-    padding-top:30px;
-    display:flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-.left{
- width: 28%;
- text-align: left;
- margin-top: 30px;
-}
-.left li{
-    font-family: 'Pragmatica';
-    font-size: 12px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.left p{
-    font-family: 'neue montreal';
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 15px;
-
-}
-.line3{
-    display: flex;
-    gap: 55px;
-    font-family: 'neue montreal';
-    margin-bottom: 15px;
-}
-
-.line3 .sector{
-    font-size: 14px;
-}
-.line3 .sector-list{
-    font-size: 18px;
-}
-.line4{
-    display: flex;
-    gap: 3px;
-}
-.line4 p{
-    font-size: 14px;
-    font-weight: 400;
-    background-color:rgba(114, 114, 114, 0.21);
-    padding: 4px 8px;
-}
-.left button{
-    font-size: 12px;
-    font-family: 'Pragmatica';
-    font-weight: 400;
-    padding: 16px 20px;
-    border-radius: 38px;
-    background: transparent;
-    outline: 0;
-    border: 1px solid var(--text-clr);
-    margin-top: 75px;
-}
-
-.right{
-    width: 70%;
-    height: 401px;
-    background-image:url(/src/assets/restlessstill.png);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-
-}
-
-.top-image{
-    position: relative;
-    z-index: 1;
-    width: 86px;
-    height: 86px;
-    left: 20px;    
-}
-
