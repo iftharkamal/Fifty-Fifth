@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'PP Acma';
+}
+ .model{
+    background-color:rgba(24, 24, 24, 0.8);
+    background-image: url(/src/assets/restlessstill.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    z-index: 4;
+} 
+
+ /* .model-banner{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    
+ } */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px;
+    margin-bottom: 10px;
+}
+.header img{
+    width: 170px;
+    margin-left: 35px;
+    color: #4f4e4ecc;
+    mix-blend-mode: overlay;
+    
+
+}
+.background-dark{
+    height: 100vh;
+    background-color: #181818CC;
+}
+.exit-btn{
+    padding: 12px 18px;
+    border: 1px solid #fff;
+}
+.exit-btn a{
+    text-decoration: none;
+   
+    color: #ffff;
+    
+}
+.exit-btn a p{
+    transform: rotate(45deg);
+    font-size: 23px;
+}
+.restless-foot{
+    color: #3b3b3bcc;
+    font-size: 75px;
+}
+
+
+
+.play-field {
+    text-align: center;
+    
+}
+.play-field img{
+    width: 830px;
+}
+.play-field svg{
+    position: relative;
+    right: 820px;
+    bottom: 15px;
+}
+.play-field p{
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.restless-foot{
+    margin-left: 45px;
+    margin-top: 15px;
+}
