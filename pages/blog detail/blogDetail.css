@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+  }
+  @font-face {
+    font-family: "PP Acma";
+    src: url(/src/Fonts/PPAcma-Light.otf);
+  }
+  @font-face {
+    font-family: "Pragmatica";
+    src: url(/src/Fonts/fonnts.com-Pragmatica_Light.otf);
+  }
+  @font-face {
+    font-family: "neue montreal";
+    src: url(/src/Fonts/ppneuemontreal-book.otf);
+  }
+  :root {
+    --background-clr: #f1ebdd;
+    --background-clr2: #e5dacd;
+    --background-clr3: #dbcfbf;
+    --background-clr4: #cbbfae;
+    --dark-background: #252323;
+    --text-clr: #574c3e;
+    --background-red: #cc0e1e;
+    --cards: 3;
+    --cardheight: 92vh;
+    --cardmargin: 3vw;
+    --cardpadding: 15px;
+  }
+
+  .blog-container{
+    background-image: url(/src/assets/blogdetail.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+  }
+
+
+.rhombus {
+    width: 18px;
+    height: 18px;
+    margin: 30px;
+    border: 1px solid #fff;
+    position: fixed;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  .header img {
+    width: 170px;
+    margin-left: 90px;
+    color: var(--text-clr);
+    mix-blend-mode: difference;
+    position: relative;
+    left: 577px;
+    color: var(--text-clr);
+    mix-blend-mode: overlay;
+  }
+  .blog-details{
+    display: flex;
+  }
+  .left-blog-head{
+    height: 80vh;
+    color: #fff;
+    font-family: 'PP Acma';
+    font-size: 45px;
+    display: flex;
+    align-items: end; 
+    margin-left: 85px;   
+  }
+  .right-blog{
+    background-color: #fff;
+    width: 538px;
+    height: 87vh;
+    margin-left: 240px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    padding-bottom: 20px;
+  }
+
+  .image-box img {
+    width: 519px;
+    height: 340px;
+    background-size: cover;
+    background-position: center;  
+    border-radius: 5px;
+    padding-top: 9px;
+  }
+  .text-section{
+    padding: 20px 30px;
+  }
+  .text-section h4{
+    font-size: 27px;
+    margin-bottom: 20px;
+  }
+  .text-section p{
+    font-family: 'neue montreal';
+    font-size: 15px;
+  }
+
+
+  .image-box-2 img{
+    width: 519px;
+    height: 340px; 
+    border-radius: 5px;
+    margin-top: 9px;
+    margin-left: 9px;
+  }
+
+  .end-section h6{
+    font-family: 'neue montreal';
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+  }
+  .image-box-3{
+    margin-bottom: 20px;
+  }
+  .image-box-3 img{
+    width: 468px;
+    height: 320px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  .image-box-3 p{
+    font-size: 17px;
+  }
+  .image-box-3 p i{
+    margin-left: 40%;
+  }
+
+
+
+
+
+
+
+
+  .footer{
+    background-color: var(--dark-background);
+    padding: 35px;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    height: 100vh;
+}
+.left-side-footer{
+    border: 1px solid #fff;
+    border-radius: 5px 0 0 5px;
+    width: 60%;
+    padding-top: 225px;
+    padding-left: 60px;
+}
+.left-side-footer img{
+    width:170px;
+    margin-bottom: 90px;
+}
+.left-side-footer li{
+    font-family: 'Pragmatica';
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.left-side-footer h1{
+    font-size: 90px;
+    font-weight: 600;
+    font-family: 'PP Acma';
+    margin-bottom: 62px;
+}
+.footer-tag{
+    display: flex;
+    gap: 200px;
+}
+.footer-tag div a{
+    text-decoration: none;
+    font-family: 'neue montreal';
+    font-size: 12px;
+    font-weight: 200;
+    color: #fff;
+}
+.line-1{
+    display: flex;
+    gap: 32px;
+}
+.right-side-footer{
+    display:flex ;
+    flex-direction: column;
+    font-family: 'Pragmatica';
+    border-right: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-radius: 0 5px 5px 0;
+    width: 38%;
+}
+.first-banner{
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px solid #fff;
+}
+.first-banner p{
+    font-size: 14px;
+}
+.second-banner{
+    padding: 42px 62px;
+    border-bottom: 1px solid #fff;
+}
+.second-banner li{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.second-banner img{
+    width: 396px;
+    margin-bottom: 10px;
+}
+.second-banner p{
+    font-family: 'neue montreal';
+    font-size: 16px;
+    font-weight: 200;
+    text-transform: none;
+}
+.second-banner p i{
+    margin-left: 126px;
+}
+.third-banner{
+    display: flex;
+    gap: 70px;
+    margin-left: 62px;
+    margin-top: 25px;
+    font-family: 'neue montreal';
+    font-size: 14px;
+}
+.col-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.col-1 a{
+    text-decoration: none;
+    color: #fff;    
+}
+.col-2{
+    font-size: 12px;
+}
