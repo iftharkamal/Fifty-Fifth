@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+@font-face {
+  font-family: "PP Acma";
+  src: url(/src/Fonts/PPAcma-Light.otf);
+}
+@font-face {
+  font-family: "Pragmatica";
+  src: url(/src/Fonts/fonnts.com-Pragmatica_Light.otf);
+}
+@font-face {
+  font-family: "neue montreal";
+  src: url(/src/Fonts/ppneuemontreal-book.otf);
+}
+:root {
+  --text-clr: #574c3e;
+  --background-red: #cc0e1e;
+}
+body {
+  color: var(--text-clr);
+  font-family: "PP Acma";
+  background-color: #fff;
+}
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+.login {
+  width: 50vw;
+}
+.rhombus {
+  width: 18px;
+  height: 18px;
+  margin: 30px;
+  border: 1px solid #0d0c08;
+  position: fixed;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.header img {
+  width: 170px;
+  margin-left: 90px;
+  color: var(--text-clr);
+  mix-blend-mode: difference;
+  position: relative;
+  left: 577px;
+}
+.contact-field {
+  padding: 18px 70px;
+}
+.contact-field li {
+  font-family: "Pragmatica";
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.contact-field li::marker {
+  color: var(--background-red);
+}
+.contact-field h2 {
+  font-family: "PP Acma";
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+.filling-field {
+  font-family: "neue montreal";
+  font-size: 14px;
+}
+.filling-field input {
+  padding: 10px;
+  outline: 0;
+  border: 1px solid #574c3e3b;
+  margin-bottom: 15px;
+}
+.filling-field ::placeholder {
+  padding-left: 10px;
+  color: var(--text-clr);
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+}
+.name label {
+  margin-bottom: 5px;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+}
+.email label {
+  margin-bottom: 5px;
+}
+.ph-number {
+  display: flex;
+  flex-direction: column;
+}
+.ph-number label {
+  margin-bottom: 5px;
+}
+.enquiry {
+  display: flex;
+  flex-direction: column;
+}
+.enquiry p {
+  margin-bottom: 5px;
+}
+.enquiry select{
+  padding: 10px;
+  outline: 0;
+  border: 1px solid #574c3e3b;
+  margin-bottom: 15px;
+}
+.enquiry select option ::marker{
+  color: #cc0e1e;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+}
+.message label {
+  margin-bottom: 5px;
+}
+.message input{
+  padding: 35px 10px;
+}
+.message input::placeholder{
+  margin-bottom: 10px;
+}
+.filling-field button {
+  padding: 20px 30px;
+  border: 0;
+  outline: 0;
+  border-radius: 38px;
+  background-color: #574c3e17;
+  cursor: pointer;
+}
+
+.image-side {
+  width: 50vw;
+  background-image: url(/src/assets/login.png);
+  background-position: center;
+  background-size: cover;
+}
+.image-side img {
+  width: 170px;
+  padding-top: 10px;
+  position: absolute;
+  right: 690px;
+}

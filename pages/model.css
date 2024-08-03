@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: "PP Acma";
+    src: url(/src/Fonts/PPAcma-Light.otf);
+  }
 body{
     font-family: 'PP Acma';
 }
